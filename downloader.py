@@ -1,11 +1,6 @@
 from pytube import YouTube
 import tkinter
 import re
-from sys import stdout
-from time import clock
-import tkinter
-from tkinter import *
-from tkinter import messagebox
 
 class Downloader():
 
@@ -19,7 +14,7 @@ class Downloader():
 	    elif progress_percent > 10 and progress_percent < 100:	    	
 	    	print('Progress - >', progress_percent_str[:5], '%')	    	
 	    else:	    	    
-	    	print('Progress - >', progress_percent_str[:6], '%')	   	    	
+	    	print('Progress - >', progress_percent_str[:6], '%')
 
 	def download_video(video_link):
 		if re.search('youtube', video_link):
